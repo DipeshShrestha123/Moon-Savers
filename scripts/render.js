@@ -40,7 +40,7 @@ function init() {
     renderer.setSize(window.innerWidth * 0.6, window.innerHeight);
     document.getElementById('moon').appendChild(renderer.domElement);
     camera.position.z = 65;
-    scene.background = new THREE.TextureLoader().load('../assets/textures/stars.jpg');
+    scene.background = new THREE.TextureLoader().load('../../assets/textures/stars.jpg');
 
 
     //Moon object init
@@ -49,7 +49,7 @@ function init() {
     var geometry = new THREE.SphereGeometry(15, 1024, 1024)
     const displacementMap = new THREE.TextureLoader()
     
-    const texture = new THREE.TextureLoader().load('../assets/textures/moon3.jpg');
+    const texture = new THREE.TextureLoader().load('../../assets/textures/moon3.jpg');
     const material = new THREE.MeshStandardMaterial({ map: texture, displacementMap: displacementMap, displacementScale: 1.6, roughness: 100.0 });
     moonObject = new THREE.Mesh(geometry, material);
 
