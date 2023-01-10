@@ -91,7 +91,7 @@ function init() {
 init();
 
 async function getDotsFromJson() {
-    const response = await fetch("./data.json");
+    const response = await fetch("../data.json");
     
     const json = await response.json();
     jsonData = json;
